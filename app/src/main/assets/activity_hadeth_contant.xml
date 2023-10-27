@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/img_bkg_app"
-    >
+    tools:context=".hadeth.HadethContantActivity">
 
     <com.google.android.material.appbar.AppBarLayout
 
@@ -43,7 +43,7 @@
         android:layout_marginTop="35dp"
         android:layout_marginBottom="55dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <include layout="@layout/activty_hadeth_content_style"/>
+        <include layout="@layout/activty_hadeth_contant_style"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

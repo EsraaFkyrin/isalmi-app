@@ -26,11 +26,10 @@ class CustomAdapterQuran(private var suras: List<String>, private var count: Lis
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-//        val itemViewModel = suras[position]
+
         holder.title.text = suras.get(position)
         holder.numberSura.text = count.get(position).toString()
-//        holder.title.setText(itemViewModel)
-//        holder.numberSura.text="$count"
+
 
         if (OnSuraClickListner != null) {
             holder.title.setOnClickListener {

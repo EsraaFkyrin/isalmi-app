@@ -6,14 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.isalmiapp.R
-
+import com.example.isalmiapp.databinding.FragmentHadethBinding
 
 
 class SebhaFragment : Fragment() {
-
-
-
-
+    lateinit var ViewBinding: FragmentHadethBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
