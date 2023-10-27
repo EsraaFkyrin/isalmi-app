@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.isalmiapp.databinding.ActivityHomeBinding
-import com.example.isalmiapp.hadeth.HadethFragment
 import com.example.isalmiapp.radio.RadioFragment
 import com.example.isalmiapp.tasbeh.SebhaFragment
+import com.example.isalmiapp.hadeth.HadethFragment
 import com.example.islamy_project.quran.QuranFragment
 
 class HomeActivity : AppCompatActivity() {
