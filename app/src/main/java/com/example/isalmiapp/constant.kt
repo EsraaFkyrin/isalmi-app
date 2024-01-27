@@ -12,4 +12,5 @@ object constant {
     var ELKETMA=" لا إله إلا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير"
     var AISTIGHFAR="استغر الله"
     var SALAH="اللهم صلي علي سيدنا محمد"
+    var Base_Url="https://mp3quran.net/api/v3/"
 }
