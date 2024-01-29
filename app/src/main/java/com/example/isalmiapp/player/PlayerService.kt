@@ -24,12 +24,11 @@ class PlayerService :Service() {
      return binder
     }
 
-    inner class MYBinder:Binder(){
-        fun getServices():PlayerService{
-            return this@PlayerService
-        }
-
-    }
+  inner class  MYBinder : Binder(){
+      fun getServices():PlayerService{
+          return this@PlayerService
+      }
+  }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         return super.onStartCommand(intent, flags, startId)

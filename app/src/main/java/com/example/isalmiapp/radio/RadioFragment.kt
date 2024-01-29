@@ -115,19 +115,19 @@ class RadioFragment : Fragment() {
          activity?.bindService(intent,connection,Context.BIND_AUTO_CREATE)
     }
 
-
     private val connection=object :ServiceConnection{
-        override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
-            val binder=service as PlayerService.MYBinder
-        //--->    service=binder.getServices()
+        override fun onServiceConnected(name: ComponentName?, mBinder: IBinder?) {
+            val binder= mBinder as PlayerService.MYBinder
+            service=binder.getServices()
             bound=true
         }
 
         override fun onServiceDisconnected(name: ComponentName?) {
-          bound=false
+            bound=false
         }
 
     }
+
     private fun startServices() {
         val  intent=Intent(activity,PlayerService::class.java)
         activity?.startService(intent)
